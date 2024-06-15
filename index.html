@@ -27,7 +27,7 @@
 
       const result = await response.json();
       if (response.ok) {
-        document.getElementById('status').textContent = `Image uploaded successfully: ${result.publicUrl}\nExtracted Text: ${result.text}`;
+        document.getElementById('status').textContent = `Image uploaded successfully: ${result.publicUrl}\nExtracted Text: ${result.textFromImage}\nExtracted Text: ${result.responseFromAddToFunGS}`;
       } else {
         document.getElementById('status').textContent = `Error: ${result.message}`;
       }
